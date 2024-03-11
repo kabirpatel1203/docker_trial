@@ -1,0 +1,15 @@
+A platform for building, running, and shipping applications.
+ 
+
+ Container: 
+ 1) An isolated enviornoment for running an applications.
+ 2) Allow running multiple apps in isolation.
+ 3) Are lightweight
+ 4) Need less Hardware resources
+
+ Virtual Machines: An abstraction of MaCHINES
+ Hypervisors: eg. VMware
+
+
+Client ----> REST API ----> Server model
+
