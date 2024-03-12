@@ -13,3 +13,32 @@ A platform for building, running, and shipping applications.
 
 Client ----> REST API ----> Server model
 
+Docker file is added to the app.
+Docker file is just a plain text file that has the instructions to package this application into image.
+Application is loaded into container.
+
+Instructions:
+
+1) Start with an OS
+2) Install Node
+3) Copy app files
+4) Run node app.js
+
+FROM node:alpine
+COPY . /app
+WORKDIR /app
+CMD node app.js
+
+docker build -t hello-docker .
+
+docker image ls 
+
+docker run hello-docker
+
+Section 2: Linux Distribution (eg. Ubuntu)
+
+docker run -it ubuntu
+
+(shell is a command that takes the argument and passes to the Operating System)
+(Linux forward oblic in path, window backward)
+(Package Managers: eg. pip, yarn, npm, etc.)
