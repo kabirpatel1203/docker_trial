@@ -41,4 +41,25 @@ docker run -it ubuntu
 
 (shell is a command that takes the argument and passes to the Operating System)
 (Linux forward oblic in path, window backward)
-(Package Managers: eg. pip, yarn, npm, etc.)
+(Package Managers: eg. pip, yarn, npm, apt,etc.)
+
+nano --> text editor for Linux
+
+install --> apt install nano
+
+pwd --> print working directory
+ls --> list all files
+ls -l--> long listing
+cd --> chang directory
+cd ~ --> home directory
+mkdir --> creating directory
+mv test redd--> rename "test" file to "redd" 
+rm --> remove files and directories
+cat/more/less  --> open and see content of file
+
+Redirect the output:
+
+cat file1.txt > file2.txt 
+(reads content from file1 and write it to file2)
+
+
