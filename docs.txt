@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 A platform for building, running, and shipping applications.
  
 
@@ -80,4 +78,34 @@ Containers are isolated from each other and bundle their own software, libraries
 Containers are designed to be ephemeral and disposable, meaning they can be stopped, started, and discarded as needed.
 Containers share the host machine's kernel, making them more lightweight and efficient than virtual machines.
 
->>>>>>> origin/main
+#### Docker + FastAPI from scratch 
+
+step 0: make a folder and then open in vscode
+
+step 1: creating and activating virtual environment from vs-code by
+python -m venv dock
+dock\Scripts\activate
+
+step 2: installing fastapi and uvicorn
+pip install fastapi
+pip install uvicorn
+
+step 3: in the same folder, there is 'dock' environment, and 'app' folder.
+In app folder, we have main.py and then we write the code and at the end, make sure to go through if name == main...
+We can write the whole additional code of FastApi and then finally move to the next step.
+
+Step 4:
+save all the dependencies on the requirements.txt by using this command.
+pip freeze > requirements.txt
+
+step 5: Dockerize the webapp
+creating the 'Dockerfile' in the root directory, and writing the code. 
+
+
+Step 6:
+Once writing the code in docker file, you can run the command to build the iamge and then run it.
+
+docker build -t python-docker-fastapi .
+docker run -p 8000:8000 python-docker-fastapi
+
+Finally, your FASTApi webapp s running on the port http://127.0.0.1:8000/
