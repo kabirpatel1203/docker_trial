@@ -63,3 +63,18 @@ cat file1.txt > file2.txt
 (reads content from file1 and write it to file2)
 
 
+Docker Images:
+An image is a read-only template or blueprint used to create containers.
+It contains the instructions for building a Docker container, including the operating system, application code, libraries, environment variables, and configuration files.
+Images are built from a set of instructions called a Dockerfile.
+Images are composed of multiple layers stacked on top of each other, with each layer representing an instruction from the Dockerfile.
+Images are designed to be immutable, meaning they cannot be modified once built.
+
+Docker Containers:
+A container is a runtime instance of a Docker image.
+It is a lightweight, standalone, and executable package that includes everything needed to run an application, including the code, runtime, system tools, system libraries, and settings.
+Containers are created from Docker images and run the actual applications.
+Containers are isolated from each other and bundle their own software, libraries, and configuration files.
+Containers are designed to be ephemeral and disposable, meaning they can be stopped, started, and discarded as needed.
+Containers share the host machine's kernel, making them more lightweight and efficient than virtual machines.
+
