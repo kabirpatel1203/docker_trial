@@ -1,0 +1,83 @@
+<<<<<<< HEAD
+=======
+A platform for building, running, and shipping applications.
+ 
+
+ Container: 
+ 1) An isolated enviornoment for running an applications.
+ 2) Allow running multiple apps in isolation.
+ 3) Are lightweight
+ 4) Need less Hardware resources
+
+ Virtual Machines: An abstraction of MaCHINES
+ Hypervisors: eg. VMware
+
+
+Client ----> REST API ----> Server model
+
+Docker file is added to the app.
+Docker file is just a plain text file that has the instructions to package this application into image.
+Application is loaded into container.
+
+Instructions:
+
+1) Start with an OS
+2) Install Node
+3) Copy app files
+4) Run node app.js
+
+FROM node:alpine
+COPY . /app
+WORKDIR /app
+CMD node app.js
+
+docker build -t hello-docker .
+
+docker image ls 
+
+docker run hello-docker
+
+Section 2: Linux Distribution (eg. Ubuntu)
+
+docker run -it ubuntu
+
+(shell is a command that takes the argument and passes to the Operating System)
+(Linux forward oblic in path, window backward)
+(Package Managers: eg. pip, yarn, npm, apt,etc.)
+
+nano --> text editor for Linux
+
+install --> apt install nano
+
+pwd --> print working directory
+ls --> list all files
+ls -l--> long listing
+cd --> chang directory
+cd ~ --> home directory
+mkdir --> creating directory
+mv test redd--> rename "test" file to "redd" 
+rm --> remove files and directories
+cat/more/less  --> open and see content of file
+
+Redirect the output:
+
+cat file1.txt > file2.txt 
+(reads content from file1 and write it to file2)
+
+
+Docker Images:
+An image is a read-only template or blueprint used to create containers.
+It contains the instructions for building a Docker container, including the operating system, application code, libraries, environment variables, and configuration files.
+Images are built from a set of instructions called a Dockerfile.
+Images are composed of multiple layers stacked on top of each other, with each layer representing an instruction from the Dockerfile.
+Images are designed to be immutable, meaning they cannot be modified once built.
+
+Docker Containers:
+A container is a runtime instance of a Docker image.
+It is a lightweight, standalone, and executable package that includes everything needed to run an application, including the code, runtime, system tools, system libraries, and settings.
+Containers are created from Docker images and run the actual applications.
+Containers are isolated from each other and bundle their own software, libraries, and configuration files.
+Containers are designed to be ephemeral and disposable, meaning they can be stopped, started, and discarded as needed.
+Containers share the host machine's kernel, making them more lightweight and efficient than virtual machines.
+
+>>>>>>> origin/main
