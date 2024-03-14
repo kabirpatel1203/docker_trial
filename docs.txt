@@ -78,6 +78,8 @@ Containers are isolated from each other and bundle their own software, libraries
 Containers are designed to be ephemeral and disposable, meaning they can be stopped, started, and discarded as needed.
 Containers share the host machine's kernel, making them more lightweight and efficient than virtual machines.
 
+
+
 #### Docker + FastAPI from scratch 
 
 step 0: make a folder and then open in vscode
